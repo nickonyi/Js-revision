@@ -1,15 +1,18 @@
-const prom = new Promise((resolve,reject)=>{
-  let a = 1+11;
+const userLeft = true;
+const userWatchingCatMeme = false;
 
-  if(a == 2){
-    resolve('success');
-  } else {
-    reject('failed');
-  }
-});
-
-prom.then(function(message){
-    console.log('This is the then '+ message);
-}).catch((message)=>{
-    console.log('THis is the catch ' + message);
-})
+function watchTutorialCallBack(callBack,errorCallBack){
+    if(userLeft){
+        errorCallBack({
+            name:'user Left',
+            message:':('
+        }) 
+    }else if (userWatchingCatMeme){
+         errorCallBack({
+            name:'User is watching cat memes',
+            message:'I am < cat memes'
+         })   
+    } else {
+        callBack
+    }
+}
