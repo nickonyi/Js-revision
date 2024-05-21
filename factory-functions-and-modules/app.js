@@ -1,32 +1,28 @@
-//function C (){
-//
-//}
-//C.prototype = { prototype_prop : "proto"};
-//const c = new C();
-//console.log(c.constructor);
-//console.log(c.constructor === C);
-//c.constructor = C;
-//console.log(C.prototype);
-//console.log(c.constructor);
-//console.log(c.constructor === C);
-//console.log(c);
-//console.log(C);
-const personFactory = (name, age) => {
-    const sayHello = () => console.log('hello!');
-    return { name, age, sayHello };
-  };
-  
-  const jeff = personFactory('jeff', 27);
-  
-  console.log(jeff.name); 
-  console.log(jeff.age);// 'jeff'
-  
-  jeff.sayHello();
+function CreateUser(name){
+  const discordName = '@' + name;
 
-  const name = "Maynard";
-const color = "red";
-const number = 34;
-const food = "rice";
+  let reputation = 0;
+
+  const getReputation = () => reputation;
+  const giveReputation = () => reputation++;
+
+  return { name, discordName, getReputation, giveReputation };
+}
+
+function CreatePlayer(name,level){
+ const user = CreateUser(name);
+
+ const increaseLevel = () => level++;
+
+ return Object.assign({},user,{level,increaseLevel});
+}
+
+const omwami = CreatePlayer('omwami', 1);
+omwami.giveReputation();
+omwami.giveReputation();
 
 
-
+console.log(omwami.getReputation());
+omwami.increaseLevel();
+console.log(omwami.level);
+console.log(omwami.discordName);
