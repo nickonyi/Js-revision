@@ -4,3 +4,11 @@ function countSheeps(sheep) {
 
     return count;
   }
+
+
+  var findAverage = function (nums) {
+    // Code here
+    const sum = nums.reduce((accumalotor,currentValue) => accumalotor + currentValue,0);
+
+    return sum / nums.length;
+  }
