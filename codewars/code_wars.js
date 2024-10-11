@@ -34,3 +34,7 @@ function replace(s){
     }
     console.log(position('c'));
     
+
+    function getEvenNumbers(numbersArray){
+      // filter out the odd numbers
+    }
