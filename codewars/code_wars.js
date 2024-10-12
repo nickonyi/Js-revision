@@ -37,4 +37,7 @@ function replace(s){
 
     function getEvenNumbers(numbersArray){
       // filter out the odd numbers
+      return numbersArray.filter(num => num %2 == 0)
     }
+
+    const REGEXP = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[A-Za-z\d]{6,}$/;
