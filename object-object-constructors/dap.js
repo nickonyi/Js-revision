@@ -67,4 +67,12 @@ function countSheeps(sheep) {
     return roundUpSqr;
 }
 
+//Refactored code
+function nearestSqRef(n){
+  // find the square number of the number n
+
+  return Math.pow(Math.round(Math.sqrt(n)),2)
+}
+
 console.log(nearestSq(9999));
+console.log(nearestSqRef(111));
