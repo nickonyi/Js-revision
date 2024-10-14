@@ -40,8 +40,8 @@ function countSheeps(sheep) {
   }
 
 
-  console.log(checkCoupon("123", "123", "July 9, 2015", "July 9, 2015") );
-  console.log(checkCoupon("123", "123", "July 9, 2015", "July 2, 2015"));
+  //console.log(checkCoupon("123", "123", "July 9, 2015", "July 9, 2015") );
+  //console.log(checkCoupon("123", "123", "July 9, 2015", "July 2, 2015"));
 
   function dutyFree(normPrice, discount, hol){
     discount = discount /100;    
@@ -49,4 +49,22 @@ function countSheeps(sheep) {
     return Math.floor(hol/savings);
   }
 
-  console.log(dutyFree(24,35,3000));
+ 
+
+  function nearestSq(n){
+    // find the square number of the number n
+
+    const squareN = Math.sqrt(n);
+    const roundD = Math.floor(squareN);
+    const roundUp = Math.ceil(squareN);
+    const roundDSqr = Math.pow(roundD,2);
+    const roundUpSqr = Math.pow(roundUp,2);
+  
+    if(n - roundDSqr <  roundUpSqr - n) {
+      return roundDSqr;
+    }
+
+    return roundUpSqr;
+}
+
+console.log(nearestSq(9999));
