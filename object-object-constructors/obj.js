@@ -42,5 +42,19 @@ function Book(title,author,pages,read){
 }
 
 const theHobbit = new Book("The Hobbit","J.R.R. Tolkien ", "295", "not read");
-theHobbit.info();
-console.log(theHobbit.info());
+
+
+Player.prototype.sayHello = function() {
+    console.log("Hello, I'm a player!");
+ };
+ Player.prototype.dbook = "Dbook is the goat!!!"
+ 
+console.log(player3.dbook);
+
+const playerFour = new Player("Dbook","x");
+
+console.log(playerFour.dbook);
+
+
+console.log(playerFour.__proto__);
+
