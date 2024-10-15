@@ -23,3 +23,4 @@ const player2 = new Player('also steve', 'O');
 
 player1.sayName();
 player1.getMarker();
+console.log(this);
