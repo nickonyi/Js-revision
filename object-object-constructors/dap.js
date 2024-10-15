@@ -76,3 +76,8 @@ function nearestSqRef(n){
 
 console.log(nearestSq(9999));
 console.log(nearestSqRef(111));
+
+
+function square(n){
+  return n * n;
+}
