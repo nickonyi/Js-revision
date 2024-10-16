@@ -74,5 +74,38 @@ function nearestSqRef(n){
   return Math.pow(Math.round(Math.sqrt(n)),2)
 }
 
-console.log(nearestSq(9999));
-console.log(nearestSqRef(111));
+
+
+
+function findUniqer(arr) {
+
+  // do 
+  const sortArr = arr.sort((a,b) => a - b); 
+ for (let i = 0; i < sortArr.length; i++) {
+      if (sortArr[i] !== sortArr[i+1]) {
+           return sortArr[i + 1];
+      }
+ }
+}
+
+function findUniq(arr) {
+  // Sort the array
+  const sortArr = arr.sort((a, b) => a - b);
+
+  // If the first two elements are different, the first one is unique
+  if (sortArr[0] !== sortArr[1]) {
+    return sortArr[0];
+  } else {
+    // Otherwise, the last one is unique
+    return sortArr[sortArr.length - 1];
+  }
+}
+
+
+console.log(findUniq([ 1, 1, 1, 2, 1, 1 ]));
+console.log(findUniq([ 0, 0, 0.55, 0, 0 ]));
+console.log(findUniq([ 0, 0, 1 ]));
+console.log(findUniq([ 1, 0, 0 ]));
+
+
+
