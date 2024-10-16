@@ -22,7 +22,10 @@ omwami.giveReputation();
 omwami.giveReputation();
 
 
-console.log(omwami.getReputation());
-omwami.increaseLevel();
-console.log(omwami.level);
-console.log(omwami.discordName);
+
+
+function replace(s){
+  //coding and coding....
+  
+  
+}

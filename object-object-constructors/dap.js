@@ -107,5 +107,33 @@ console.log(findUniq([ 0, 0, 0.55, 0, 0 ]));
 console.log(findUniq([ 0, 0, 1 ]));
 console.log(findUniq([ 1, 0, 0 ]));
 
+console.log(nearestSq(9999));
+console.log(nearestSqRef(111));
+
+
+function square(n){
+  return n * n;
+}
+
+
+const uniqueInOrder = (iterable) => {
+  //your code here - remember iterable can be a string or an array
+  
+  const arraySplit = typeof iterable === "string"?iterable.split(""):iterable;
+  const arrayEnd = [];
+
+  for (let i = 0; i < arraySplit.length; i++) {
+       if(arraySplit[i] != arraySplit[i+1]){
+           arrayEnd.push(arraySplit[i]);
+       }
+    
+  }
+
+  return arrayEnd;
+}
+
+console.log(uniqueInOrder('AAAABBBCCDAABBB'));
+console.log(uniqueInOrder('ABBCcAD'));
+console.log(uniqueInOrder([1,2,2,3,3]));
 
 
