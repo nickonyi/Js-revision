@@ -102,13 +102,7 @@ function findUniq(arr) {
 }
 
 
-console.log(findUniq([ 1, 1, 1, 2, 1, 1 ]));
-console.log(findUniq([ 0, 0, 0.55, 0, 0 ]));
-console.log(findUniq([ 0, 0, 1 ]));
-console.log(findUniq([ 1, 0, 0 ]));
 
-console.log(nearestSq(9999));
-console.log(nearestSqRef(111));
 
 
 function square(n){
@@ -132,9 +126,9 @@ const uniqueInOrder = (iterable) => {
   return arrayEnd;
 }
 
-console.log(uniqueInOrder('AAAABBBCCDAABBB'));
-console.log(uniqueInOrder('ABBCcAD'));
-console.log(uniqueInOrder([1,2,2,3,3]));
+//console.log(uniqueInOrder('AAAABBBCCDAABBB'));
+//console.log(uniqueInOrder('ABBCcAD'));
+//console.log(uniqueInOrder([1,2,2,3,3]));
 
 function combat(health, damage) {
   // Write your code here
@@ -148,4 +142,25 @@ function combat(health, damage) {
 
 function largestPairSum (numbers) {
   //TODO: Write your Code here
+  let sortNumbers = numbers.sort((a,b) => b - a);
+  return sortNumbers[0] + sortNumbers[1];
+
 }
+//console.log(largestPairSum([10, 14, 2, 23, 19]));
+//console.log(largestPairSum([99, 2, 2, 23, 19]));
+//console.log(largestPairSum([-100,-29,-24,-19,19]));
+console.log(largestPairSum([-10, -8, -16, -18, -19]));
+
+const number = (busStops) => {
+  let peopleOn = 0;
+  let peopleOff = 0;
+
+  for (let i = 0; i < busStops.length; i++) {
+     peopleOn += busStops[i][0];
+     peopleOff += busStops[i][1];
+  }
+
+  return peopleOn - peopleOff;
+}
+
+console.log(number([[10,0],[3,5],[5,8]]));
