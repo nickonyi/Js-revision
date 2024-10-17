@@ -136,4 +136,16 @@ console.log(uniqueInOrder('AAAABBBCCDAABBB'));
 console.log(uniqueInOrder('ABBCcAD'));
 console.log(uniqueInOrder([1,2,2,3,3]));
 
+function combat(health, damage) {
+  // Write your code here
+  if(health - damage < 0){
+    return 0;
+  }
 
+  return health - damage;
+}
+
+
+function largestPairSum (numbers) {
+  //TODO: Write your Code here
+}
