@@ -163,4 +163,29 @@ const number = (busStops) => {
   return peopleOn - peopleOff;
 }
 
-console.log(number([[10,0],[3,5],[5,8]]));
+//console.log(number([[10,0],[3,5],[5,8]]));
+
+
+function multipleOfIndex(array) {
+  // good luck
+  const arrayEnd = [];
+
+  for (let i = 0; i < array.length; i++) {
+    if(i === 0 && array[i] === 0){
+      arrayEnd.push(i);
+    } 
+       if(array[i] % i === 0){
+          arrayEnd.push(array[i]);
+       }
+    
+  }
+
+  return arrayEnd;
+}
+
+console.log(multipleOfIndex([22, -6, 32, 82, 9, 25]));
+console.log(multipleOfIndex([-56,-85,72,-26,-14,76,-27,72,35,-21,-67,87,0,21,59,27,-92,68]));
+console.log(multipleOfIndex([0, 2, 3, 6, 9]));
+
+
+
