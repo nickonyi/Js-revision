@@ -13,7 +13,7 @@ let animal = {
   };
 
   let longEar = {
-    earLength: 10,
+    earLength: 1032324,
     __proto__: rabbit
   };
   
