@@ -188,6 +188,18 @@ function multipleOfIndex(array) {
 //console.log(multipleOfIndex([0, 2, 3, 6, 9]));
 
 function warnTheSheep(queue) {
-
+    for (let i = queue.length -1; i < queue.length; i--) {
+      if (queue[queue.length -1] === "wolf") {
+          return "Pls go away and stop eating my sheep";
+      } else if(queue[i] === "wolf"){
+         return `Oi! Sheep number ${(queue.length - 1)- queue.indexOf("wolf")}! You are about to be eaten by a wolf!`
+      }
+      
+    }
 }
+
+console.log(warnTheSheep(["sheep", "sheep", "wolf"]));
+console.log(warnTheSheep(["sheep", "sheep", "sheep", "wolf", "sheep"]));
+console.log(warnTheSheep(["wolf", "sheep", "sheep", "sheep", "sheep", "sheep", "sheep"]));
+
 
