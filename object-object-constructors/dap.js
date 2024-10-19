@@ -199,7 +199,7 @@ function warnTheSheep(queue) {
 }
 
 console.log(warnTheSheep(["sheep", "sheep", "wolf"]));
-console.log(warnTheSheep(["sheep", "sheep", "sheep", "wolf", "sheep"]));
+console.log(warnTheSheep(["sheep", "sheep","sheep", "sheep", "wolf", "sheep"]));
 console.log(warnTheSheep(["wolf", "sheep", "sheep", "sheep", "sheep", "sheep", "sheep"]));
 
 
