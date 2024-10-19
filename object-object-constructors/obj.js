@@ -49,12 +49,23 @@ Player.prototype.sayHello = function() {
  };
  Player.prototype.dbook = "Dbook is the goat!!!"
  
-console.log(player3.dbook);
+
 
 const playerFour = new Player("Dbook","x");
 
-console.log(playerFour.dbook);
+const calculator = (function () {
+    const add = (a, b) => a + b;
+    const sub = (a, b) => a - b;
+    const mul = (a, b) => a * b;
+    const div = (a, b) => a / b;
+    return { add, sub, mul, div };
+  })();
+  
+  calculator.add(3,5); // 8
+  calculator.sub(6,2); // 4
+  calculator.mul(14,5534); // 77476
+  
 
-
-console.log(playerFour.__proto__);
+console.log(calculator.mul(14,5534));
+console.log(calculator.add(21,32));
 
