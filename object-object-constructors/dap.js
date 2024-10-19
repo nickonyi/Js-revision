@@ -183,9 +183,11 @@ function multipleOfIndex(array) {
   return arrayEnd;
 }
 
-console.log(multipleOfIndex([22, -6, 32, 82, 9, 25]));
-console.log(multipleOfIndex([-56,-85,72,-26,-14,76,-27,72,35,-21,-67,87,0,21,59,27,-92,68]));
-console.log(multipleOfIndex([0, 2, 3, 6, 9]));
+//console.log(multipleOfIndex([22, -6, 32, 82, 9, 25]));
+//console.log(multipleOfIndex([-56,-85,72,-26,-14,76,-27,72,35,-21,-67,87,0,21,59,27,-92,68]));
+//console.log(multipleOfIndex([0, 2, 3, 6, 9]));
 
+function warnTheSheep(queue) {
 
+}
 
