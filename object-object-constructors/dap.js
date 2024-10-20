@@ -208,4 +208,19 @@ function litres(time) {
   return Math.floor((timeH*0.5)/60);
 }
 
-console.log(litres(1787));
+//console.log(litres(1787));
+
+function addLength(str) {
+  //start-here
+ const splitArr = str.split(' ');
+ for (let i = 0; i < splitArr.length; i++) {
+       splitArr[i] = `${splitArr[i]} ${splitArr[i].length}`;
+ }
+
+ return splitArr;
+ 
+  }
+  
+  console.log(addLength("apple ban"))
+  console.log(addLength("you will win"));
+  
