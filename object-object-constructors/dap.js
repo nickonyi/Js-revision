@@ -198,8 +198,14 @@ function warnTheSheep(queue) {
     }
 }
 
-console.log(warnTheSheep(["sheep", "sheep", "wolf"]));
-console.log(warnTheSheep(["sheep", "sheep","sheep", "sheep", "wolf", "sheep"]));
-console.log(warnTheSheep(["wolf", "sheep", "sheep", "sheep", "sheep", "sheep", "sheep"]));
+//console.log(warnTheSheep(["sheep", "sheep", "wolf"]));
+//console.log(warnTheSheep(["sheep", "sheep","sheep", "sheep", "wolf", "sheep"]));
+//console.log(warnTheSheep(["wolf", "sheep", "sheep", "sheep", "sheep", "sheep", "sheep"]));
 
 
+function litres(time) {
+ const timeH = time * 60;
+  return Math.floor((timeH*0.5)/60);
+}
+
+console.log(litres(1787));
