@@ -221,6 +221,17 @@ function addLength(str) {
  
   }
   
+  function calculateArea(A) {
+  // Calculate the radius using the arc length formula
+  const r = (2 * A) / Math.PI;
+  
+  // Calculate the area of the square
+  const area = r * r;
+  
+  // Return the area rounded to two decimal places
+  return +area.toFixed(2);
+}
+
   console.log(addLength("apple ban"))
   console.log(addLength("you will win"));
   
