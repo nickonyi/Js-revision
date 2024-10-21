@@ -251,4 +251,9 @@ function mouthSize(animal) {
   return "wide";
 }
   
-  
+  function findSmallestInt(arr) {
+  //your code here
+  return Math.min(...arr);
+}
+
+console.log(findSmallestInt([78,56,232,12,8]));
