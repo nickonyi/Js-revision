@@ -232,6 +232,17 @@ function addLength(str) {
   return +area.toFixed(2);
 }
 
-  console.log(addLength("apple ban"))
-  console.log(addLength("you will win"));
+  function hello(name) {
+    if(name === ""){
+      return "Hello, World!";
+    }
+
+    name = name.charAt(0).toUpperCase()+ name.slice(1).toLowerCase();
+
+  return "Hello," + name+"!";
+}
+
+  console.log(hello('johN'));
+  console.log(hello(''));
+  
   
