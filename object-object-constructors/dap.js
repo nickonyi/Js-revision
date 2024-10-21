@@ -242,7 +242,13 @@ function addLength(str) {
   return "Hello," + name+"!";
 }
 
-  console.log(hello('johN'));
-  console.log(hello(''));
+function mouthSize(animal) {
+  // code here
+  if(animal.toLowerCase() === "alligator"){
+     return "small"
+  }
+
+  return "wide";
+}
   
   
