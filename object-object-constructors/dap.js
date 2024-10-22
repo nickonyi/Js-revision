@@ -259,8 +259,22 @@ function mouthSize(animal) {
 //console.log(findSmallestInt([78,56,232,12,8]));
 
 function twoSort(s) {
-   return s.sort((a,b) => a - b);
+   s = s.sort();
+   const firstValue = s[0];
+   let result = '';
+
+   for (let i = 0; i < firstValue.length; i++) {
+       result += firstValue[i];
+
+       if (i !== firstValue.length - 1) {
+            result += "*".repeat(3);
+       }
+    
+   }
+
+   return result;
 }
+
 
 console.log(twoSort(["bitcoin", "take", "over", "the", "world", "maybe", "who", "knows", "perhaps"]));
 console.log(twoSort(["turns", "out", "random", "test", "cases", "are", "easier", "than", "writing", "out", "basic", "ones"]));
