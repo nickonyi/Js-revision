@@ -277,5 +277,28 @@ function twoSort(s) {
 
 
 const encryptThis = (text) => {
+  let plainArr = text.split(" ");
+  let cipherText = '';
   
+  for (let i = 0; i < plainArr.length; i++) {
+       // Remove the trailing space
+       let word = plainArr[i];
+       let asciicode = word.charCodeAt(0);
+       
+       if(word.length > 2){
+          word = asciicode + word[word.length -1] + word.slice(2,-1) + word[1];
+       } else if (word.length === 2) {
+           word = asciicode + word[1];
+       } else {
+        word = asciicode;
+       }
+       cipherText += word + ' ';
+  }
+  
+
+  return cipherText.trim();
 }
+
+
+
+console.log(encryptThis("A wise old owl lived in an oak"));
