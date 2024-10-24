@@ -322,3 +322,27 @@ function chromosomeCheck(sperm) {
      }
 }
 
+function dataReverse(data) {
+  // Your code here
+  //devide the data in 8 bit segments
+  const segmentSize = 8;
+  let segments = [];
+ 
+
+  for (let i = 0; i < data.length; i+= segmentSize) {
+    let segment = data.slice(i,i+segmentSize);
+    segments.push(segment);
+  }
+//reverse the order of the array
+
+
+segments.reverse();
+//then join all the segments together
+
+const bigArray = segments.flat();
+return bigArray;
+ 
+}
+
+console.log(dataReverse([1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,1,0,1,0,1,0]));
+
