@@ -334,11 +334,8 @@ function dataReverse(data) {
     segments.push(segment);
   }
 //reverse the order of the array
-
-
 segments.reverse();
 //then join all the segments together
-
 const bigArray = segments.flat();
 return bigArray;
  
