@@ -302,3 +302,11 @@ const encryptThis = (text) => {
 
 
 console.log(encryptThis("A wise old owl lived in an oak"));
+
+function noOdds( values ){
+  // Return all non-odd values
+
+  return values.filter((num) => num % 2 === 0);
+}
+
+console.log(noOdds([0,1,2,3,4]));
