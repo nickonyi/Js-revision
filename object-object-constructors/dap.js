@@ -343,3 +343,6 @@ return bigArray;
 
 console.log(dataReverse([1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,1,0,1,0,1,0]));
 
+function howManyLightsabersDoYouOwn(name) {
+  return name ==="Zach"? 18:0;
+}
