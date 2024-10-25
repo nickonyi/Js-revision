@@ -301,7 +301,7 @@ const encryptThis = (text) => {
 
 
 
-console.log(encryptThis("A wise old owl lived in an oak"));
+//console.log(encryptThis("A wise old owl lived in an oak"));
 
 function noOdds( values ){
   // Return all non-odd values
@@ -341,8 +341,28 @@ return bigArray;
  
 }
 
-console.log(dataReverse([1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,1,0,1,0,1,0]));
+//console.log(dataReverse([1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,1,0,1,0,1,0]));
 
 function howManyLightsabersDoYouOwn(name) {
   return name ==="Zach"? 18:0;
 }
+
+function factorial(n)
+{
+  // Calculate the factorial here
+  if(n < 0 || n > 12){
+    throw new RangeError("Input must be between 0 and 12.");
+  }
+  let result = 1;
+  for (let i = 2; i <= n; i++) {
+    result*= i;
+    
+  }
+
+  return result;
+  
+}
+
+console.log(factorial(11));
+console.log(factorial(0));
+
