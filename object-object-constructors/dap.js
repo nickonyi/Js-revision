@@ -367,3 +367,15 @@ function factorial(n)
 //console.log(factorial(11));
 //console.log(factorial(0));
 
+function minValue(values){
+  //your code here
+  //remove duplicates
+  const uniqueNumbers = [...new Set(values)];
+  //sort the array
+  const leastNumber = uniqueNumbers.sort((a,b) => a -b);
+  return Number(leastNumber.join(""));
+}
+
+console.log(minValue([1, 9, 1, 3, 7, 4, 6, 6, 7]));
+console.log(minValue([1,3,1]));
+
