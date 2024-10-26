@@ -302,4 +302,68 @@ const encryptThis = (text) => {
 
 
 console.log(encryptThis("A wise old owl lived in an oak"));
+//console.log(encryptThis("A wise old owl lived in an oak"));
+
+function noOdds( values ){
+  // Return all non-odd values
+
+  return values.filter((num) => num % 2 === 0);
+}
+
+const stringToNumber = function(str){
+  // put your code here
+  return Number(str);
+}
+
+function chromosomeCheck(sperm) {
+     if(sperm === "XX"){
+      return  "Congratulations! You're going to have a daughter.";
+     } else if (sperm === "XY"){
+       return "Congratulations! You're going to have a son.";
+     }
+}
+
+function dataReverse(data) {
+  // Your code here
+  //devide the data in 8 bit segments
+  const segmentSize = 8;
+  let segments = [];
+ 
+
+  for (let i = 0; i < data.length; i+= segmentSize) {
+    let segment = data.slice(i,i+segmentSize);
+    segments.push(segment);
+  }
+//reverse the order of the array
+segments.reverse();
+//then join all the segments together
+const bigArray = segments.flat();
+return bigArray;
+ 
+}
+
+//console.log(dataReverse([1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,1,0,1,0,1,0]));
+
+function howManyLightsabersDoYouOwn(name) {
+  return name ==="Zach"? 18:0;
+}
+
+function factorial(n)
+{
+  // Calculate the factorial here
+  if(n < 0 || n > 12){
+    throw new RangeError("Input must be between 0 and 12.");
+  }
+  let result = 1;
+  for (let i = 2; i <= n; i++) {
+    result*= i;
+    
+  }
+
+  return result;
+  
+}
+
+//console.log(factorial(11));
+//console.log(factorial(0));
 
