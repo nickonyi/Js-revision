@@ -23,5 +23,33 @@ function findEvenIndex(arr)
 
 function sortArray(array) {
     // Return a sorted array.
+   //filter the odd numbers
+   const oddNum = array.filter((num) => num%2 !== 0);
+   
+   
+   //sort the oddNumbers
+   const sortedOddNum = oddNum.sort((a,b) => a-b);
+   
+   
+   //combine the sorted Odd numbers with the rest of array
+   let sortedIndex = 0
+   let arrCombine = array.map((num) => {
+        if (num % 2 !== 0){
+            return sortedOddNum[sortedIndex++];
+        }
+        return num;
+   })
+//
+   return arrCombine;
   }
+
+//console.log(sortArray([7,1]));
+//console.log(sortArray([5, 8, 6, 3, 4]));
+console.log(sortArray([ 1, 11, 2, 8, 3, 4, 5 ]));
+///Sort array factor
+
+const sortArray = (array) => {
+    
+}
+
 
