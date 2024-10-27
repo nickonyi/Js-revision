@@ -45,11 +45,12 @@ function sortArray(array) {
 
 //console.log(sortArray([7,1]));
 //console.log(sortArray([5, 8, 6, 3, 4]));
-console.log(sortArray([ 1, 11, 2, 8, 3, 4, 5 ]));
-///Sort array factor
 
-const sortArray = (array) => {
-    
+///Sort array refactor
+
+const sortArrayRe = (array) => {
+    const odd = array.filter((x) => x % 2).sort((a,b) => a - b);
+    return array.map((x) => x % 2?odd.shift():x);
 }
 
-
+console.log(sortArrayRe([ 1, 11, 2, 8, 3, 4, 5 ]));
