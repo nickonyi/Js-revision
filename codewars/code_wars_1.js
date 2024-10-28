@@ -54,3 +54,15 @@ const sortArrayRe = (array) => {
 }
 
 console.log(sortArrayRe([ 1, 11, 2, 8, 3, 4, 5 ]));
+
+function check(a, x) {
+  // your code here
+  for (let i = 0; i < a.length; i++) {
+      
+    if(a[i] === x){
+      return true;
+    }
+  }
+
+  return false;
+}
