@@ -53,7 +53,7 @@ const sortArrayRe = (array) => {
     return array.map((x) => x % 2?odd.shift():x);
 }
 
-console.log(sortArrayRe([ 1, 11, 2, 8, 3, 4, 5 ]));
+///console.log(sortArrayRe([ 1, 11, 2, 8, 3, 4, 5 ]));
 
 function check(a, x) {
   // your code here
@@ -66,3 +66,28 @@ function check(a, x) {
 
   return false;
 }
+
+function diamond(n){
+   if(n < 0 || n % 2 === 0){
+    return null;
+   }
+let diamondStr = '';
+const ascending = [];
+
+for (let i = 1; i <=n; i+=2) {
+  ascending.push(i);
+}
+
+const decending = ascending.slice(0,-1).reverse();
+const diamondArr = [...ascending,...decending];
+
+for (let i = 0; i < diamondArr.length; i++) {
+  const spaces = ' '.repeat((n - diamondArr[i])/2);
+  diamondStr += spaces + "*".repeat(diamondArr[i]) +"\n";
+}
+
+return diamondStr;
+}
+
+console.log(diamond(27));
+
