@@ -89,7 +89,7 @@ for (let i = 0; i < diamondArr.length; i++) {
 return diamondStr;
 }
 
-console.log(diamond(15));
+//console.log(diamond(15));
 
 function findAverage(array) {
   // your code here
@@ -99,7 +99,7 @@ function findAverage(array) {
   return array.reduce((num,acc) => num + acc,0)/array.length;
 }
 
-console.log(findAverage([1,2,3,4]));
+//console.log(findAverage([1,2,3,4]));
 
 
 function findShort(s){
@@ -113,7 +113,7 @@ function findShort(s){
   return Math.min(...wordCountArr);
 }
 
-console.log(findShort("bitcoin take over the world maybe who knows perhaps"));
+//console.log(findShort("bitcoin take over the world maybe who knows perhaps"));
 
 function findDifference(a, b) {
   //loading...
@@ -122,3 +122,22 @@ function findDifference(a, b) {
 
   return Math.abs(volA - volB);
 }
+
+function printerError(s) {
+  // your code
+  const controlString = s.split("");
+  const correctingCode = "m".charCodeAt(0);
+  let error = 0;
+ 
+  for (let i = 0; i < controlString.length; i++) {
+       if(controlString[i].charCodeAt(0) > correctingCode){
+         error++;
+       }
+    
+  }
+  return `${error}/${s.length}`;
+}
+
+console.log(printerError("aaaxbbbbyyhwawiwjjjwwm"));
+console.log(printerError("aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbmmmmmmmmmmmmmmmmmmmxyz"));
+
