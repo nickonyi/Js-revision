@@ -100,3 +100,17 @@ function findAverage(array) {
 }
 
 console.log(findAverage([1,2,3,4]));
+
+
+function findShort(s){
+  const wordArray = s.split(" ");
+  let wordCountArr = [];
+
+  for (let i = 0; i < wordArray.length; i++) {
+      wordCountArr.push(wordArray[i].length);
+  }
+
+  return Math.min(...wordCountArr);
+}
+
+console.log(findShort("bitcoin take over the world maybe who knows perhaps"));
