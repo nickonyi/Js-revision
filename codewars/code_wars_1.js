@@ -114,3 +114,11 @@ function findShort(s){
 }
 
 console.log(findShort("bitcoin take over the world maybe who knows perhaps"));
+
+function findDifference(a, b) {
+  //loading...
+  const volA = a.reduce((a,b) => a*b,1);
+  const volB = b.reduce((a,b) => a*b,1);
+
+  return Math.abs(volA - volB);
+}
