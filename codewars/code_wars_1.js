@@ -89,5 +89,5 @@ for (let i = 0; i < diamondArr.length; i++) {
 return diamondStr;
 }
 
-console.log(diamond(27));
+console.log(diamond(15));
 
