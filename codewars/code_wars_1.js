@@ -141,3 +141,8 @@ function printerError(s) {
 console.log(printerError("aaaxbbbbyyhwawiwjjjwwm"));
 console.log(printerError("aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbmmmmmmmmmmmmmmmmmmmxyz"));
 
+
+function move(position,roll){
+  return position + (roll * 2);
+}
+
