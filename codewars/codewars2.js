@@ -32,5 +32,24 @@ function longest(s1, s2) {
     return uniqueArray.join("");
   }
 
-  console.log(longest("aretheyhere", "yestheyarehere"));
+  function getSum(a, b)
+  {
+     //Good luck!
+     if (a === b) {
+        return a || b;
+     }
+
+     const min = Math.min(a,b);
+     const max = Math.max(a,b);
+     
+     
+     let result = 0;
+
+     for (let i = min; i <=max; i++) {
+         result +=i;
+     }
+     return result;
+  }
+
+  console.log(getSum(2, 2));
   
