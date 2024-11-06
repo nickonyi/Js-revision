@@ -21,3 +21,8 @@ function exponent(a,b){
 function subt(a,b){
     return a - b;
 }
+
+
+function longest(s1, s2) {
+    // your code
+  }
