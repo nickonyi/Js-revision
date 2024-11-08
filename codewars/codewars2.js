@@ -53,7 +53,7 @@ function longest(s1, s2) {
 
   function simpleMultiplication(number) {
     // your code........
-     return number % 2? number * 9:number * 8;
+     return number % 2 ? number * 9:number * 8;
 }
 
   
