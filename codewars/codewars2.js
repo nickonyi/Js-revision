@@ -59,13 +59,9 @@ function longest(s1, s2) {
   
 function noBoringZeros(n) {
     // your code
-    const nonZ = String(n);
-    console.log(typeof nonZ);
-    
-    const fileterZero = nonZ.split("").filter((x) => x !== '0');
 
-    return fileterZero;
-  }
+    return parseInt(n.toString().replace(/0+$/,''),10);
+}
 
   console.log(noBoringZeros(-105));
   
