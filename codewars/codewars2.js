@@ -68,7 +68,7 @@ function digitize(n) {
   return reverseArray.map(Number);
 }
 
-console.log(digitize(35231));
+//console.log(digitize(35231));
 
 function greet(name) {
   //your code here
@@ -84,4 +84,13 @@ function noSpace(x) {
   return x.replace(/\s+/g, '');
 }
 
-console.log(noSpace('8 j 8   mBliB8g  imjB8B8  jl  B'));
+//console.log(noSpace('8 j 8   mBliB8g  imjB8B8  jl  B'));
+
+function getAge(inputString) {
+  // return the girl's correct age as an integer. Happy coding :)
+
+  const num = inputString.slice(0, 1);
+  return parseInt(num, 10);
+}
+
+console.log(getAge('5 years old'));
