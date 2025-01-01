@@ -8,11 +8,11 @@ multiplicationTable = function (size) {
     multArr[i] = [];
 
     for (let j = 0; j < col; j++) {
-      multArr[i][j] = i * col + j + 1;
+      multArr[i][j] = (i + 1) * (j + 1);
     }
   }
 
   return multArr;
 };
 
-console.log(multiplicationTable(6));
+console.log(multiplicationTable(3));
