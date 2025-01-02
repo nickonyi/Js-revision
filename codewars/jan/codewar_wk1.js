@@ -15,4 +15,4 @@ multiplicationTable = function (size) {
   return multArr;
 };
 
-console.log(multiplicationTable(3));
+console.log(multiplicationTable(3334));
