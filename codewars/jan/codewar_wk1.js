@@ -15,4 +15,6 @@ multiplicationTable = function (size) {
   return multArr;
 };
 
-console.log(multiplicationTable(3334));
+function sumPairs(ints, s) {
+  return [0, 0] || undefined;
+}
