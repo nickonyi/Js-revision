@@ -53,5 +53,33 @@ var sum_pairs = function (ints, s) {
 
 function duplicateEncode(word) {
   // ...
-  return '';
+  //initialize a varaible for my end result that I can return
+  //initialize an object to track how many times I am seeing objects
+  //Loop over my string array
+  //if it is the first time I am encountering a letter I add ( to my end result
+  //if it is the second time I am seeing the letter I add this to the array
+  //then I return the result as a string
+
+  let result = '';
+  const seen = {};
+
+  word
+    .toLowerCase()
+    .split('')
+    .forEach((item) => {
+      for (let char of item) {
+        if (!seen[char]) {
+          seen[char] = 1;
+          result += '(';
+        } else {
+          seen[char] += 1;
+          result += ')';
+        }
+      }
+    });
+
+  return result;
 }
+
+console.log(duplicateEncode('mtammzakwe'));
+console.log(duplicateEncode('Success'));
