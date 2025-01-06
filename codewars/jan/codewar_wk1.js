@@ -48,5 +48,10 @@ var sum_pairs = function (ints, s) {
   }
 };
 
-console.log(sum_pairs([10, 5, 2, 3, 7, 5], 10));
-console.log(sum_pairs([20, -13, 40], -7));
+//console.log(sum_pairs([10, 5, 2, 3, 7, 5], 10));
+//console.log(sum_pairs([20, -13, 40], -7));
+
+function duplicateEncode(word) {
+  // ...
+  return '';
+}
