@@ -53,32 +53,20 @@ var sum_pairs = function (ints, s) {
 
 function duplicateEncode(word) {
   // ...
-  //initialize a varaible for my end result that I can return
-  //initialize an object to track how many times I am seeing objects
-  //Loop over my string array
-  //if it is the first time I am encountering a letter I add ( to my end result
-  //if it is the second time I am seeing the letter I add this to the array
-  //then I return the result as a string
+  //convert into lowercase
+  //create a frequency count map
+  //map each charatcter to ( or ) based on its frequency
+  const lowercase = word.toLowerCase();
+  const charCount = {};
 
-  let result = '';
-  const seen = {};
+  for (const char of lowercase) {
+    charCount[char] = (charCount[char] || 0) + 1;
+  }
 
-  word
-    .toLowerCase()
+  return lowercase
     .split('')
-    .forEach((item) => {
-      for (let char of item) {
-        if (!seen[char]) {
-          seen[char] = 1;
-          result += '(';
-        } else {
-          seen[char] += 1;
-          result += ')';
-        }
-      }
-    });
-
-  return result;
+    .map((char) => (charCount[char] === 1 ? '(' : ')'))
+    .join('');
 }
 
 console.log(duplicateEncode('mtammzakwe'));
