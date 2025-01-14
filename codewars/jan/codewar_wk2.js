@@ -16,4 +16,23 @@ function evaporator(content, evap_per_day, threshold) {
 
 function sumOfMinimums(arr) {
   // your code here
+  //find the minium values in each row and put them into an array
+  const minValues = arr.map((row) => Math.min(...row));
+  //add them all together
+  console.log(minValues);
+
+  const sumMin = minValues.reduce(
+    (accumulator, currentValue) => accumulator + currentValue,
+    0
+  );
+
+  return sumMin;
 }
+
+console.log(
+  sumOfMinimums([
+    [7, 9, 8, 6, 2],
+    [6, 3, 5, 4, 3],
+    [5, 8, 7, 4, 5],
+  ])
+);
