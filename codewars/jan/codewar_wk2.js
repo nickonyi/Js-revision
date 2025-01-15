@@ -38,5 +38,8 @@ console.log(
 );
 
 var greet = function (name) {
-  return `Hello ${name.toUpperCase()}!`;
+  name = name.toLowerCase();
+  return `Hello ${name.slice(0, 1).toUpperCase() + name.slice(1)}!`;
 };
+
+console.log(greet('BILLY'));
