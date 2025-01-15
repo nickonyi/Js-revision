@@ -37,4 +37,6 @@ console.log(
   ])
 );
 
-var greet = function (name) {};
+var greet = function (name) {
+  return `Hello ${name.toUpperCase()}!`;
+};
