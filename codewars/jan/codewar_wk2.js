@@ -36,3 +36,5 @@ console.log(
     [5, 8, 7, 4, 5],
   ])
 );
+
+var greet = function (name) {};
