@@ -56,7 +56,7 @@ const watchTutorialCallBackPromise = () => {
 
 watchTutorialCallBackPromise()
   .then((message) => {
-    console.log(message);
+    console.log('Uwe wangu' + message);
   })
   .catch((error) => {
     console.log(error.message);
